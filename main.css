@@ -1,0 +1,251 @@
+* {
+  font-family: 'Nanum Pen Script', sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url('./images/todobg.jpeg');
+  font-family: 'Nanum Pen Script', sans-serif;
+}
+
+header {
+  width: 150px;
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.input__content {
+  width: 80%;
+  margin: 30px auto 0;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+/* remove content */
+.input__content .remove--content {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  margin: 0 15px 0 25px;
+  cursor: pointer;
+}
+
+.input__content .remove--content .trash--img {
+  width: 50px;
+  display: block;
+  margin: auto;
+}
+
+.input__content .remove--content .remove__btn {
+  display: none;
+}
+
+.input__content .remove--content .remove + .remove__btn {
+  display: inline-block;
+  position: absolute;
+  writing-mode: vertical-lr;
+  z-index: 1;
+  left: -60px;
+}
+
+/* view content */
+.input__content .view--content {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.input__content .view--content .view--img {
+  width: 50px;
+  display: block;
+  margin: auto;
+}
+
+.input__content .view--content .view + .view__btn {
+  display: inline-block;
+  position: absolute;
+  writing-mode: vertical-lr;
+  z-index: 1;
+  left: -110px;
+}
+
+.input__content .view--content .view__btn {
+  display: none;
+}
+
+.input__content .trash--img:hover,
+.input__content .view--img:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.list--input {
+  width: 20%;
+  height: 30px;
+  font-size: 20px;
+  padding: 0 0 0 5px;
+}
+
+.add--btn, .removeall--btn, .done__remove--btn, .done__only, .undone__only, .all__view {
+  font-size: 20px;
+  padding: 3px 6px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.list--content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list--content .listbox {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #c8c8c8;
+  background-color: transparent;
+  width: 80%;
+  margin: 0 auto 5px;
+}
+
+.list--content .listbox>input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.list--content .listbox .title--style {
+  background-color: transparent;
+  border: 0;
+  width: auto;
+  font-size: 20px;
+}
+
+.list--content .done .title--style {
+  text-decoration: line-through;
+}
+
+.list--content .listbox .date__content {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 20px;
+}
+
+/* Loding */
+@keyframes ldio-yh7lr86f9ej {
+  0% {
+    transform: translate(6px, 40px) scale(0);
+  }
+
+  25% {
+    transform: translate(6px, 40px) scale(0);
+  }
+
+  50% {
+    transform: translate(6px, 40px) scale(1);
+  }
+
+  75% {
+    transform: translate(40px, 40px) scale(1);
+  }
+
+  100% {
+    transform: translate(74px, 40px) scale(1);
+  }
+}
+
+@keyframes ldio-yh7lr86f9ej-r {
+  0% {
+    transform: translate(74px, 40px) scale(1);
+  }
+
+  100% {
+    transform: translate(74px, 40px) scale(0);
+  }
+}
+
+@keyframes ldio-yh7lr86f9ej-c {
+  0% {
+    background: #797979
+  }
+
+  25% {
+    background: #cacaca
+  }
+
+  50% {
+    background: #a6a6a6
+  }
+
+  75% {
+    background: #888888
+  }
+
+  100% {
+    background: #797979
+  }
+}
+
+.ldio-yh7lr86f9ej div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(40px, 40px) scale(1);
+  background: #797979;
+  animation: ldio-yh7lr86f9ej 2.5s infinite cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+.ldio-yh7lr86f9ej div:nth-child(1) {
+  background: #888888;
+  transform: translate(74px, 40px) scale(1);
+  animation: ldio-yh7lr86f9ej-r 0.625s infinite cubic-bezier(0, 0.5, 0.5, 1), ldio-yh7lr86f9ej-c 2.5s infinite step-start;
+}
+
+.ldio-yh7lr86f9ej div:nth-child(2) {
+  animation-delay: -0.625s;
+  background: #797979;
+}
+
+.ldio-yh7lr86f9ej div:nth-child(3) {
+  animation-delay: -1.25s;
+  background: #888888;
+}
+
+.ldio-yh7lr86f9ej div:nth-child(4) {
+  animation-delay: -1.875s;
+  background: #a6a6a6;
+}
+
+.ldio-yh7lr86f9ej div:nth-child(5) {
+  animation-delay: -2.5s;
+  background: #cacaca;
+}
+
+.loadingio-spinner-ellipsis-4mn2wosnged {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.ldio-yh7lr86f9ej {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-yh7lr86f9ej div {
+  box-sizing: content-box;
+}

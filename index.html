@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RESET -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+  <title>To Do List</title>
+
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header onclick="location.href='/'">오늘 할 일</header>
+  <div class="input__content">
+    <input type="text" placeholder="할 일을 입력하세요" class="list--input" />
+    <button class="add--btn">추가</button>
+
+    <div class="remove--content">
+      <img src="./images/trash.svg" alt="trash" class="trash--img" />
+      <div class="remove__btn">
+      <button class="removeall--btn">전체 삭제</button>
+      <button class="done__remove--btn">완료한 일 삭제</button>
+    </div>
+
+    </div>
+    <div class="view--content">
+      <img src="./images/view.svg" alt="view" class="view--img" />
+      <div class="view__btn">
+      <button class="done__only">완료한 일 보기</button>
+      <button class="undone__only">미완료한 일 보기</button>
+      <button class="all__view">전체 보기</button>
+    </div>
+    </div>
+  </div>
+  <div class="list--content"></div>
+
+  <!-- Loding -->
+  <div class="loadingio-spinner-ellipsis-4mn2wosnged loding--display">
+    <div class="ldio-yh7lr86f9ej">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+
+</html>
