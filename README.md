@@ -23,5 +23,4 @@
 
 ### 🖥 화면 이미지 :
 ---
-<img src='https://user-images.githubusercontent.com/107393773/205558093-86252c6a-05fd-4f35-929a-5816204ef2f9.png' onClick='https://to-li-do-st.netlify.app/'>
-이미지 클릭 시 배포 사이트로 넘어갑니다.
+<img src='https://user-images.githubusercontent.com/107393773/205558093-86252c6a-05fd-4f35-929a-5816204ef2f9.png'>
