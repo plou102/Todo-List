@@ -19,7 +19,7 @@ export function renderList(todos) {
     let updateDate = new Date(updatedAt);
     let [uMonth, uDay, uHours, uMinutes] = [
       String(updateDate.getMonth() + 1).padStart(2, 0),
-      String(updateDate.getDay()).padStart(2, 0),
+      String(updateDate.getDate()).padStart(2, 0),
       String(updateDate.getHours()).padStart(2, 0),
       String(updateDate.getMinutes()).padStart(2, 0),
     ]
